@@ -41,10 +41,25 @@ No obstante, la selección de propuestas y las decisiones finales corresponden a
 
 **Herramienta**: ChatGPT.
 
-*+Qué pedí**: Ayuda para organizar y comparar el análisis de Gesad, CIBERSAD y Birdie.
+**Qué pedí**: Ayuda para organizar y comparar el análisis de Gesad, CIBERSAD y Birdie.
 
-*+Qué devolvió la IA**: Una estructura común para analizar los tres referentes y una síntesis de sus características.
+**Qué devolvió la IA**: Una estructura común para analizar los tres referentes y una síntesis de sus características.
 
 **Qué conservé**: La organización por producto y la comparación de las funciones destinadas a coordinación, familiares y cuidadores.
 
 **Qué cambié**: Revisé las conclusiones para distinguir las características descritas en fuentes públicas de los problemas que todavía no he comprobado directamente.De la misma forma, evité presentar las hipótesis de usabilidad como defectos demostrados y relacioné los aprendizajes con las necesidades identificadas en mis entrevistas.
+
+
+## 16/10/2026 — Definición del MVP
+
+### 1. Organización y priorización de funcionalidades
+
+**Herramienta**: ChatGPT.
+
+**Qué pedí**: Ayuda para organizar las funcionalidades de CUIDALIA y decidir cuáles incluir en el MVP y cuáles dejar fuera, teniendo en cuenta las necesidades de los usuarios, la viabilidad técnica y el tiempo disponible.
+
+**Qué devolvió la IA**: Una propuesta estructurada de funcionalidades para coordinación, trabajadores y familiares, junto con justificaciones para las funciones incluidas y descartadas.
+
+**Qué conservé**: La organización del panel principal de coordinación, la gestión básica de ausencias, las fichas contextuales de los usuarios, las recomendaciones de sustitución mediante reglas y puntuaciones, y la confirmación manual por parte del coordinador. También conservé las funciones de consulta y registro previstas para trabajadores, la consulta de información por parte de los familiares y el acceso diferenciado según el perfil.
+
+**Qué cambié**: Delimité el alcance excluyendo funcionalidades que aumentarían la complejidad sin ser imprescindibles para validar el proceso principal, como la mensajería en tiempo real, las notificaciones push, la optimización automática de rutas, la gestión administrativa avanzada y los algoritmos predictivos o basados en modelos avanzados de inteligencia artificial. 
