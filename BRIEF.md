@@ -1,4 +1,4 @@
-# BRIEF DEL PROYECTO
+# BRIEF DEL PROYECTO [Enlace al brief en FigJam](https://www.figma.com/board/bmj5okPQBjTse368s8NVrZ/Ideas-proyecto-DIW?node-id=103-675&t=TuTAvgNBjkPNDd40-4)
 
 ## El problema detectado
 
