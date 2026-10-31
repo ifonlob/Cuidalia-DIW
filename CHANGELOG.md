@@ -63,3 +63,33 @@ No obstante, la selección de propuestas y las decisiones finales corresponden a
 **Qué conservé**: La organización del panel principal de coordinación, la gestión básica de ausencias, las fichas contextuales de los usuarios, las recomendaciones de sustitución mediante reglas y puntuaciones, y la confirmación manual por parte del coordinador. También conservé las funciones de consulta y registro previstas para trabajadores, la consulta de información por parte de los familiares y el acceso diferenciado según el perfil.
 
 **Qué cambié**: Delimité el alcance excluyendo funcionalidades que aumentarían la complejidad sin ser imprescindibles para validar el proceso principal, como la mensajería en tiempo real, las notificaciones push, la optimización automática de rutas, la gestión administrativa avanzada y los algoritmos predictivos o basados en modelos avanzados de inteligencia artificial. 
+
+# CHANGELOG - Órbita 2
+
+## Rediseño de wireframes con Google Stitch
+
+### Trabajador
+
+#### Pantalla de login
+
+La propuesta generada por Stitch se ajusta bastante a la idea que tenía para esta pantalla. He decidido conservar su diseño general, ya que me parece más acogedor, sencillo y minimalista. Únicamente he eliminado el mensaje de protección, porque considero que no aporta información relevante para el proceso de inicio de sesión y ocupa un espacio innecesario.
+
+#### Pantalla de resumen general
+
+En esta pantalla he optado por eliminar los emoticonos y la fotografía de perfil, ya que considero que ambos elementos son prescindibles y no aportan información relevante para la tarea principal del usuario.
+
+Además, he reorganizado la distribución de los elementos para aprovechar mejor el espacio disponible y evitar la presencia de demasiados huecos en blanco. Con estos cambios busco conseguir una pantalla más equilibrada, ordenada y fácil de consultar.
+
+#### Pantalla de mis turnos
+
+En este caso, he mantenido la estructura general propuesta por Stitch, pero he realizado algunos ajustes para simplificar la interfaz. He eliminado iconos redundantes y recuadros que no consideraba necesarios, además de reorganizar los elementos para conseguir una distribución más limpia y aprovechar mejor el espacio.
+
+Mi intención ha sido facilitar la consulta de los turnos, dando mayor protagonismo a la información realmente importante.
+
+#### Pantalla de detalle del turno
+
+En primer lugar, he cambiado el nombre de la pantalla de «Detalle del turno» a «Detalle visita», para mantener la coherencia con la denominación establecida en el resto del proyecto.
+
+También he eliminado algunos iconos redundantes y los últimos recuadros correspondientes al contacto con coordinación y las observaciones, puesto que estos elementos no estaban contemplados en mi diseño original. De esta manera, he conseguido simplificar la interfaz y mantener únicamente la información necesaria.
+
+Por último, he decidido conservar la propuesta de barra de navegación inferior de Stitch, ya que me parece más limpia, minimalista e intuitiva que la distribución que tenía inicialmente.
