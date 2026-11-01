@@ -93,3 +93,18 @@ En primer lugar, he cambiado el nombre de la pantalla de «Detalle del turno» a
 También he eliminado algunos iconos redundantes y los últimos recuadros correspondientes al contacto con coordinación y las observaciones, puesto que estos elementos no estaban contemplados en mi diseño original. De esta manera, he conseguido simplificar la interfaz y mantener únicamente la información necesaria.
 
 Por último, he decidido conservar la propuesta de barra de navegación inferior de Stitch, ya que me parece más limpia, minimalista e intuitiva que la distribución que tenía inicialmente.
+
+### Familiar
+
+En este caso he optado por rediseñar de forma exclusiva la pantalla de 'Ficha del cuidador' puesto que las mejoras ofrecidas por Stitch no me han parecido lo suficiente
+notorias ni que aportaran mejoras en cuanto a jerarquía visual.
+
+#### Ficha del cuidador
+
+En esta pantalla he decidido conservar la estructura general propuesta por Stitch, pero he realizado varios ajustes para conseguir una interfaz más compacta y organizada.
+
+En primer lugar, he reorganizado la tarjeta del cuidador asignado, reduciendo el tamaño de su imagen de perfil y agrupando mejor la información del nombre y el horario. También he incorporado dos acciones de contacto diferentes, por una parte la que permite enviar un mensaje y por otra, la que realiza una llamada telefónica, facilitando el acceso a ambas opciones sin tener que depender de una única acción.
+
+Por otro lado, he simplificado las tarjetas correspondientes a los demás cuidadores, reduciendo su altura y reorganizando la información para aprovechar mejor el espacio disponible. También he incorporado un pequeño icono de horario para identificar más rápidamente los turnos de cada cuidador.
+
+En general, he buscado conseguir una pantalla más limpia, compacta y funcional, dando mayor protagonismo al cuidador asignado y facilitando la consulta de las alternativas disponibles.
