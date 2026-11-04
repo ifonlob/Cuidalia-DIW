@@ -108,3 +108,25 @@ En primer lugar, he reorganizado la tarjeta del cuidador asignado, reduciendo el
 Por otro lado, he simplificado las tarjetas correspondientes a los demás cuidadores, reduciendo su altura y reorganizando la información para aprovechar mejor el espacio disponible. También he incorporado un pequeño icono de horario para identificar más rápidamente los turnos de cada cuidador.
 
 En general, he buscado conseguir una pantalla más limpia, compacta y funcional, dando mayor protagonismo al cuidador asignado y facilitando la consulta de las alternativas disponibles.
+
+### Coordinador (Desktop)
+
+#### Pantalla de login
+
+En esta pantalla he optado por reorganizar la distribución del formulario de inicio de sesión, concentrando sus elementos en un contenedor central para conseguir una interfaz más ordenada y equilibrada.
+
+También he mejorado la identificación de los campos de correo electrónico y contraseña mediante etiquetas visibles e iconos que facilitan reconocer su función. He mantenido la opción de recordar la sesión y la posibilidad de solicitar la generación de credenciales, diferenciando claramente la acción principal del resto de opciones.
+
+En general, he buscado simplificar el proceso de acceso y establecer una jerarquía visual más clara, dando protagonismo al formulario sin perder la identidad de la aplicación.
+
+#### Pantalla de resumen general
+
+En esta pantalla he decidido mantener una estructura basada en una barra lateral de navegación y una zona principal de contenido, ya que considero que permite acceder a las diferentes secciones de la plataforma de forma más organizada y aprovechar mejor el espacio disponible en escritorio.
+
+He reorganizado la información del resumen general mediante tarjetas mejores estructuradas, como los usuarios activos, los trabajadores, los turnos del día y las incidencias. De esta manera, coordinación puede obtener una visión general de la actividad de la plataforma de un solo vistazo.
+
+Además, he organizado la parte inferior en dos bloques diferenciados: por un lado, los turnos del día, mostrando los horarios y los trabajadores correspondientes; y, por otro, las alertas, que permiten identificar rápidamente las incidencias pendientes de resolver.
+
+También he mantenido la barra superior con el buscador, el acceso a las notificaciones y la información del perfil, separando estas opciones de la navegación principal.
+
+Con esta distribución busco ofrecer a coordinación una visión general más clara de la actividad diaria, facilitando la localización de la información relevante y evitando que los distintos bloques de contenido compitan entre sí.
