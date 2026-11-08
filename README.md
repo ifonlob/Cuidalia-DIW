@@ -66,3 +66,9 @@ Los wireframes de CUIDALIA representan la estructura básica de las pantallas y 
 El brief reúne el problema detectado, el alcance del MVP, las personas, los criterios de éxito y las restricciones que orientarán el desarrollo de CUIDALIA.
 
 - [Consultar BRIEF.md](./BRIEF.md)
+
+### 9. Órbita 2 (Mockups)
+
+En este apartado se han desarrollado los Mockups de la aplicación a partir del rediseño de los wireframes realizados en la primera órbita
+
+- [Consultar ORBITA2.md](./ORBITA2.md)
