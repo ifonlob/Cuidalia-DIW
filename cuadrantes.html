@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Gestión y consulta de los cuadrantes semanales de trabajadores y usuarios de CUIDALIA."
+    />
+
+    <title>Cuadrantes - Coordinador | CUIDALIA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body class="aplicacion">
+    <!-- BARRA LATERAL -->
+    <aside class="barra-lateral">
+      <header class="barra-lateral__cabecera">
+        <a class="marca" href="index.html">
+          <img
+            class="marca__imagen"
+            src="./icons/Logotipo Cuidalia.svg"
+            alt="Logotipo de Cuidalia"
+            width="78"
+            height="63"
+          />
+          CUIDALIA
+        </a>
+      </header>
+
+      <article class="perfil-lateral">
+        <img
+          class="perfil-lateral__imagen"
+          src="./icons/coordinadoraImagen.png"
+          alt="Fotografía de Laura Martínez"
+          width="70"
+          height="70"
+        />
+
+        <header class="perfil-lateral__informacion">
+          <p class="perfil-lateral__nombre">Laura Martínez</p>
+          <p class="perfil-lateral__rol">Coordinadora</p>
+        </header>
+
+        <button class="perfil-lateral__boton" type="button" title="Mostrar opciones del perfil">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </article>
+
+      <nav class="menu-principal">
+        <ul class="menu-principal__lista">
+          <li class="menu-principal__elemento">
+            <a class="menu-principal__enlace" href="index.html">
+              <img src="./icons/inicio.svg" alt="Icono de una casa" width="30" height="30" />
+              <p class="menu-principal__texto">Inicio</p>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento menu-principal__elemento--activo">
+            <a class="menu-principal__enlace" href="cuadrantes.html">
+              <img
+                src="./icons/cuadrantes.svg"
+                alt="Icono de un calendario"
+                width="30"
+                height="30"
+              />
+              <p class="menu-principal__texto">Cuadrantes</p>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <a class="menu-principal__enlace" href="usuarios.html">
+              <img src="./icons/usuarios.svg" alt="Icono de una persona" width="30" height="30" />
+              <p class="menu-principal__texto">Usuarios</p>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <a class="menu-principal__enlace" href="trabajadores.html">
+              <img
+                src="./icons/trabajadores.svg"
+                alt="Icono de agrupación"
+                width="30"
+                height="30"
+              />
+              <p class="menu-principal__texto">Trabajadores</p>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <a class="menu-principal__enlace" href="incidencias.html">
+              <img
+                src="./icons/incidencias.svg"
+                alt="Icono de advertencia"
+                width="30"
+                height="30"
+              />
+              <p class="menu-principal__texto">Incidencias</p>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <a class="menu-principal__enlace" href="mensajes.html">
+              <img
+                src="./icons/mensajes.svg"
+                alt="Icono de bocadillo de mensaje"
+                width="30"
+                height="30"
+              />
+              <p class="menu-principal__texto">Mensajes</p>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <a class="menu-principal__enlace" href="reportes.html">
+              <img src="./icons/reportes.svg" alt="Icono de gráfica" width="30" height="30" />
+              <p class="menu-principal__texto">Reportes</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu-principal__lista--inferior">
+          <li class="menu-principal__elemento">
+            <a class="menu-principal__enlace" href="ajustes.html">
+              <img src="./icons/ajustes.svg" alt="Icono de engranaje" width="30" height="30" />
+              <p class="menu-principal__texto">Ajustes</p>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <button class="menu-principal__enlace menu-principal__enlace--salir" type="button">
+              <img
+                src="./icons/cerrar_sesion.svg"
+                alt="Icono de puerta de salida"
+                width="30"
+                height="30"
+              />
+              <p class="menu-principal__texto">Cerrar sesión</p>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- ZONA DE APLICACIÓN -->
+    <section class="zona-aplicacion">
+      <main class="zona-principal">
+        <!-- BARRA SUPERIOR -->
+        <header class="barra-superior">
+          <form class="buscador">
+            <label class="buscador-etiqueta">
+              <img
+                class="buscador__icono"
+                src="./icons/lupa.svg"
+                alt="Buscar"
+                width="18"
+                height="18"
+              />
+
+              <input
+                class="buscador__campo"
+                type="search"
+                name="busqueda"
+                placeholder="Buscar"
+                autocomplete="off"
+              />
+            </label>
+          </form>
+
+          <button class="notificaciones" type="button" title="Consultar notificaciones">
+            <img
+              class="notificaciones__icono"
+              src="./icons/campana.svg"
+              alt="Notificaciones"
+              width="20"
+              height="20"
+            />
+          </button>
+
+          <button class="perfil-superior" type="button" title="Mostrar opciones de la cuenta">
+            <img
+              class="perfil-superior__imagen"
+              src="./icons/coordinadoraImagen.png"
+              alt="Foto de perfil de una coordinadora"
+              width="42"
+              height="42"
+            />
+
+            Coordinadora
+
+            <svg
+              class="perfil-superior__desplegable"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="contenido-principal">
+          <header class="encabezado-pagina">
+            <h1 class="encabezado-pagina__titulo">Cuadrantes</h1>
+          </header>
+
+          <!-- FILTROS DE LOS CUADRANTES -->
+          <form class="filtros-cuadrantes">
+            <label class="filtros-cuadrantes__etiqueta">
+              Semana:
+
+              <span class="filtros-cuadrantes__control">
+                <img
+                  src="./icons/cuadrantes.svg"
+                  alt="Icono de un calendario"
+                  width="16"
+                  height="16"
+                />
+
+                <select class="filtros-cuadrantes__selector" name="semana">
+                  <option value="actual">Semana</option>
+                  <option value="anterior">Semana anterior</option>
+                  <option value="siguiente">Semana siguiente</option>
+                </select>
+              </span>
+            </label>
+
+            <label class="filtros-cuadrantes__etiqueta">
+              Trabajador:
+
+              <span class="filtros-cuadrantes__control">
+                <img
+                  src="./icons/trabajadores.svg"
+                  alt="Icono de agrupación"
+                  width="16"
+                  height="16"
+                />
+
+                <select class="filtros-cuadrantes__selector" name="trabajador">
+                  <option value="todos">Todos</option>
+                  <option value="ana-torres">Ana Torres</option>
+                  <option value="luis-perez">Luis Pérez</option>
+                  <option value="felipe-gomez">Felipe Gómez</option>
+                  <option value="carmen-ruiz">Carmen Ruiz</option>
+                </select>
+              </span>
+            </label>
+
+            <label class="filtros-cuadrantes__etiqueta">
+              Usuario/s:
+
+              <span class="filtros-cuadrantes__control">
+                <img src="./icons/usuarios.svg" alt="Icono de una persona" width="16" height="16" />
+
+                <select class="filtros-cuadrantes__selector" name="usuario">
+                  <option value="todos">Todos</option>
+                  <option value="maria-lopez">María López</option>
+                  <option value="jose-garcia">José García</option>
+                  <option value="almudena-mena">Almudena Mena</option>
+                </select>
+              </span>
+            </label>
+
+            <button class="filtros-cuadrantes__boton" type="button">Asignar turno</button>
+          </form>
+
+          <!-- TABLA SEMANAL DE ASIGNACIONES -->
+          <table class="tabla-cuadrantes">
+            <caption class="tabla-cuadrantes__titulo">
+              Cuadrantes semanales de trabajadores
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Trabajador</th>
+                <th scope="col">Lunes</th>
+                <th scope="col">Martes</th>
+                <th scope="col">Miércoles</th>
+                <th scope="col">Jueves</th>
+                <th scope="col">Viernes</th>
+                <th scope="col">Sábado</th>
+                <th scope="col">Domingo</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- ANA TORRES -->
+              <tr>
+                <th class="tabla-cuadrantes__trabajador" scope="row">
+                  <p class="tabla-cuadrantes__avatar">AT</p>
+                  <p class="tabla-cuadrantes__nombre">Ana Torres</p>
+                </th>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">ML</p>
+                    <p class="tarjeta-asignacion__nombre">María López</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="08:00">08:00</time> -
+                      <time datetime="14:00">14:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Las Flores, 12</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">JG</p>
+                    <p class="tarjeta-asignacion__nombre">José García</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="15:00">15:00</time> -
+                      <time datetime="17:00">17:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Constitución, 18</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">ML</p>
+                    <p class="tarjeta-asignacion__nombre">María López</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="08:00">08:00</time> -
+                      <time datetime="14:00">14:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Las Flores, 12</p>
+                  </article>
+                </td>
+
+                <td>
+                  <p class="tabla-cuadrantes__vacio">Sin datos</p>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">AM</p>
+                    <p class="tarjeta-asignacion__nombre">Almudena Mena</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="18:30">18:30</time> -
+                      <time datetime="20:00">20:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ San Juan, 5 Bajo</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">JG</p>
+                    <p class="tarjeta-asignacion__nombre">José García</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="15:00">15:00</time> -
+                      <time datetime="17:00">17:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Constitución, 18</p>
+                  </article>
+                </td>
+
+                <td>
+                  <p class="tabla-cuadrantes__vacio">Sin datos</p>
+                </td>
+              </tr>
+
+              <!-- LUIS PÉREZ -->
+              <tr>
+                <th class="tabla-cuadrantes__trabajador" scope="row">
+                  <p class="tabla-cuadrantes__avatar">LP</p>
+                  <p class="tabla-cuadrantes__nombre">Luis Pérez</p>
+                </th>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">JG</p>
+                    <p class="tarjeta-asignacion__nombre">José García</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="15:00">15:00</time> -
+                      <time datetime="17:00">17:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Constitución, 18</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">AM</p>
+                    <p class="tarjeta-asignacion__nombre">Almudena Mena</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="18:30">18:30</time> -
+                      <time datetime="20:00">20:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ San Juan, 5 Bajo</p>
+                  </article>
+                </td>
+
+                <td>
+                  <p class="tabla-cuadrantes__vacio">Sin datos</p>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">ML</p>
+                    <p class="tarjeta-asignacion__nombre">María López</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="08:00">08:00</time> -
+                      <time datetime="14:00">14:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Las Flores, 12</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">JG</p>
+                    <p class="tarjeta-asignacion__nombre">José García</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="15:00">15:00</time> -
+                      <time datetime="17:00">17:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Constitución, 18</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">AM</p>
+                    <p class="tarjeta-asignacion__nombre">Almudena Mena</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="18:30">18:30</time> -
+                      <time datetime="20:00">20:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ San Juan, 5 Bajo</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">ML</p>
+                    <p class="tarjeta-asignacion__nombre">María López</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="08:00">08:00</time> -
+                      <time datetime="14:00">14:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Las Flores, 12</p>
+                  </article>
+                </td>
+              </tr>
+
+              <!-- FELIPE GÓMEZ -->
+              <tr>
+                <th class="tabla-cuadrantes__trabajador" scope="row">
+                  <p class="tabla-cuadrantes__avatar">FG</p>
+                  <p class="tabla-cuadrantes__nombre">Felipe Gómez</p>
+                </th>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">AM</p>
+                    <p class="tarjeta-asignacion__nombre">Almudena Mena</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="18:30">18:30</time> -
+                      <time datetime="20:00">20:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ San Juan, 5 Bajo</p>
+                  </article>
+                </td>
+
+                <td>
+                  <p class="tabla-cuadrantes__vacio">Sin datos</p>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">JG</p>
+                    <p class="tarjeta-asignacion__nombre">José García</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="15:00">15:00</time> -
+                      <time datetime="17:00">17:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Constitución, 18</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">AM</p>
+                    <p class="tarjeta-asignacion__nombre">Almudena Mena</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="18:30">18:30</time> -
+                      <time datetime="20:00">20:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ San Juan, 5 Bajo</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">ML</p>
+                    <p class="tarjeta-asignacion__nombre">María López</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="08:00">08:00</time> -
+                      <time datetime="14:00">14:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Las Flores, 12</p>
+                  </article>
+                </td>
+
+                <td>
+                  <p class="tabla-cuadrantes__vacio">Sin datos</p>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">JG</p>
+                    <p class="tarjeta-asignacion__nombre">José García</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="15:00">15:00</time> -
+                      <time datetime="17:00">17:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Constitución, 18</p>
+                  </article>
+                </td>
+              </tr>
+
+              <!-- CARMEN RUIZ -->
+              <tr>
+                <th class="tabla-cuadrantes__trabajador" scope="row">
+                  <p class="tabla-cuadrantes__avatar">CR</p>
+                  <p class="tabla-cuadrantes__nombre">Carmen Ruiz</p>
+                </th>
+
+                <td>
+                  <p class="tabla-cuadrantes__vacio">Sin datos</p>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">ML</p>
+                    <p class="tarjeta-asignacion__nombre">María López</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="08:00">08:00</time> -
+                      <time datetime="14:00">14:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Las Flores, 12</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">AM</p>
+                    <p class="tarjeta-asignacion__nombre">Almudena Mena</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="18:30">18:30</time> -
+                      <time datetime="20:00">20:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ San Juan, 5 Bajo</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">JG</p>
+                    <p class="tarjeta-asignacion__nombre">José García</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="15:00">15:00</time> -
+                      <time datetime="17:00">17:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Constitución, 18</p>
+                  </article>
+                </td>
+
+                <td>
+                  <p class="tabla-cuadrantes__vacio">Sin datos</p>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">ML</p>
+                    <p class="tarjeta-asignacion__nombre">María López</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="08:00">08:00</time> -
+                      <time datetime="14:00">14:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ Las Flores, 12</p>
+                  </article>
+                </td>
+
+                <td>
+                  <article class="tarjeta-asignacion">
+                    <p class="tarjeta-asignacion__avatar">AM</p>
+                    <p class="tarjeta-asignacion__nombre">Almudena Mena</p>
+                    <p class="tarjeta-asignacion__horario">
+                      <time datetime="18:30">18:30</time> -
+                      <time datetime="20:00">20:00</time>
+                    </p>
+                    <p class="tarjeta-asignacion__direccion">C/ San Juan, 5 Bajo</p>
+                  </article>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <!-- PIE DE PÁGINA -->
+      <footer class="pie-pagina">
+        <p class="pie-pagina__copyright">&copy; 2026 CUIDALIA. Todos los derechos reservados.</p>
+
+        <nav class="pie-pagina__navegacion">
+          <ul class="pie-pagina__lista">
+            <li class="pie-pagina__elemento">
+              <a class="pie-pagina__enlace" href="index.html"> Inicio </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+  </body>
+</html>
