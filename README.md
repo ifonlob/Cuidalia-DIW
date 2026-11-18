@@ -6,6 +6,10 @@ La idea surge de los problemas detectados durante la investigación: horarios re
 
 El objetivo es reunir la información importante en un mismo lugar y ayudar a que cada persona encuentre lo que necesita según su papel. Por lo que, la propuesta prioriza una coordinación más sencilla, la consulta de la información de cada usuario y la búsqueda de sustitutos cuando se producen ausencias imprevistas.
 
+## Enlace a Github Pages del proyecto
+
+[Github Pages](https://ifonlob.github.io/Cuidalia-DIW/)
+
 ## Evidencias del proyecto — FigJam
 
 En el siguiente tablero se recoge la investigación y el trabajo realizado durante la Órbita 1.
