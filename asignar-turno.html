@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Asignación de turnos a trabajadores disponibles en CUIDALIA."
+    />
+
+    <title>Asignar turno - Coordinador | CUIDALIA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body class="aplicacion">
+    <!-- BARRA LATERAL: Identidad, perfil y navegación principal -->
+    <aside class="barra-lateral">
+      <header class="barra-lateral__cabecera">
+        <a class="marca" href="index.html">
+          <img
+            class="marca__imagen"
+            src="./icons/Logotipo Cuidalia.svg"
+            alt="Logotipo de Cuidalia"
+            width="78"
+            height="63"
+          />
+          <span class="marca__nombre">CUIDALIA</span>
+        </a>
+      </header>
+
+      <section class="perfil-lateral">
+        <img
+          class="perfil-lateral__imagen"
+          src="./icons/coordinadoraImagen.png"
+          alt="Fotografía de Laura Martínez"
+          width="70"
+          height="7"
+        />
+
+        <article class="perfil-lateral__informacion">
+          <p class="perfil-lateral__nombre">Laura Martínez</p>
+          <p class="perfil-lateral__rol">Coordinadora</p>
+        </article>
+
+        <button class="perfil-lateral__boton" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            focusable="false"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </section>
+
+      <nav class="menu-principal">
+        <ul class="menu-principal__lista">
+          <li class="menu-principal__elemento">
+            <img src="./icons/inicio.svg" alt="Icono de una casa" width="24" height="24" />
+            <a class="menu-principal__enlace" href="index.html">
+              <span class="menu-principal__texto">Inicio</span>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento menu-principal__elemento--activo">
+            <img src="./icons/cuadrantes.svg" alt="Icono de un calendario" width="30" height="30" />
+            <a class="menu-principal__enlace" href="cuadrantes.html">
+              <span class="menu-principal__texto">Cuadrantes</span>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <img src="./icons/usuarios.svg" alt="Icono de una persona" width="30" height="30" />
+            <a class="menu-principal__enlace" href="#">
+              <span class="menu-principal__texto">Usuarios</span>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <img src="./icons/trabajadores.svg" alt="Icono de agrupación" width="30" height="30" />
+            <a class="menu-principal__enlace" href="#">
+              <span class="menu-principal__texto">Trabajadores</span>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <img src="./icons/incidencias.svg" alt="Icono de advertencia" width="30" height="30" />
+            <a class="menu-principal__enlace" href="#">
+              <span class="menu-principal__texto">Incidencias</span>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <img
+              src="./icons/mensajes.svg"
+              alt="Icono de bocadillo de mensaje"
+              width="30"
+              height="30"
+            />
+            <a class="menu-principal__enlace" href="#">
+              <span class="menu-principal__texto">Mensajes</span>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <img src="./icons/reportes.svg" alt="Icono de gráfica" width="30" height="30" />
+            <a class="menu-principal__enlace" href="#">
+              <span class="menu-principal__texto">Reportes</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu-principal__lista--inferior">
+          <li class="menu-principal__elemento">
+            <img src="./icons/ajustes.svg" alt="Icono de engranaje" width="30" height="30" />
+            <a class="menu-principal__enlace" href="#">
+              <span class="menu-principal__texto">Ajustes</span>
+            </a>
+          </li>
+
+          <li class="menu-principal__elemento">
+            <img
+              src="./icons/cerrar_sesion.svg"
+              alt="Icono de puerta de salida"
+              width="30"
+              height="30"
+            />
+            <button class="menu-principal__enlace menu-principal__enlace--salir" type="button">
+              <span class="menu-principal__texto">Cerrar sesión</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- ZONA PRINCIPAL: Barra superior y contenido de la pantalla -->
+    <section class="zona-aplicacion">
+      <main class="zona-principal">
+        <header class="barra-superior">
+          <form class="buscador">
+            <label class="buscador-etiqueta">
+              <img
+                class="buscador__icono"
+                src="./icons/lupa.svg"
+                alt="Buscar"
+                width="18"
+                height="18"
+              />
+              <input class="buscador__campo" type="search" name="busqueda" placeholder="Buscar" />
+            </label>
+          </form>
+
+          <button class="notificaciones" type="button">
+            <img
+              class="notificaciones__icono"
+              src="./icons/campana.svg"
+              alt="Icono de Campana"
+              width="20"
+              height="20"
+            />
+          </button>
+
+          <button class="perfil-superior" type="button">
+            <img
+              class="perfil-superior__imagen"
+              src="./icons/coordinadoraImagen.png"
+              alt="Foto de perfil de una coordinadora"
+              width="42"
+              height="42"
+            />
+            <span class="perfil-superior__nombre">Coordinadora</span>
+            <svg
+              class="perfil-superior__desplegable"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              focusable="false"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </header>
+
+        <section class="contenido-principal">
+          <!-- ENCABEZADO DE LA ASIGNACIÓN -->
+          <header class="encabezado-pagina encabezado-pagina--asignar-turno">
+            <img
+              class="encabezado-pagina__icono"
+              src="./icons/cuadrantes.svg"
+              alt=""
+              width="24"
+              height="24"
+            />
+            <h1 class="encabezado-pagina__titulo">Asignar Turno</h1>
+          </header>
+
+          <!-- USUARIO AL QUE SE LE ASIGNARÁ EL TURNO -->
+          <section class="usuario-seleccionado">
+            <h2 class="usuario-seleccionado__titulo">Usuario/a seleccionado/a</h2>
+
+            <article class="tarjeta-usuario">
+              <img
+                class="tarjeta-usuario__imagen"
+                src="./icons/mariaLopezUsuario.png"
+                alt="Fotografía de María López"
+                width="42"
+                height="42"
+              />
+
+              <header class="tarjeta-usuario__informacion">
+                <h3 class="tarjeta-usuario__nombre">María López</h3>
+                <address class="tarjeta-usuario__direccion">Calle Las Flores 14</address>
+              </header>
+
+              <a class="tarjeta-usuario__enlace" href="usuario.html"> Ver ficha de María López </a>
+            </article>
+          </section>
+
+          <!-- INFORMACIÓN DEL TURNO QUE SE VA A ASIGNAR -->
+          <section class="turno-seleccionado">
+            <h2 class="turno-seleccionado__titulo">Turno</h2>
+
+            <article class="tarjeta-turno">
+              <ul class="detalle-turno">
+                <li class="detalle-turno__elemento">
+                  Fecha
+                  <p class="detalle-turno__valor detalle-turno__valor--fecha">
+                    <img
+                      class="detalle-turno__icono"
+                      src="./icons/cuadrantes.svg"
+                      alt=""
+                      width="24"
+                      height="24"
+                    />
+                    <time datetime="2026-04-21">Lunes 21 de abril de 2026</time>
+                  </p>
+                </li>
+
+                <li class="detalle-turno__elemento">
+                  Horario
+                  <p class="detalle-turno__valor detalle-turno__valor--horario">
+                    <svg
+                      class="detalle-turno__icono"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <path d="M12 7v5l3 2"></path>
+                    </svg>
+                    <time datetime="2026-04-21T16:00">16:00</time> -
+                    <time datetime="2026-04-21T17:30">17:30</time>
+                  </p>
+                </li>
+
+                <li class="detalle-turno__elemento">
+                  Tareas
+                  <p class="detalle-turno__valor detalle-turno__valor--tareas">
+                    <img
+                      class="detalle-turno__icono"
+                      src="./icons/inicio.svg"
+                      alt=""
+                      width="24"
+                      height="24"
+                    />
+                    Limpieza del baño, higiene y cocina
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <!-- TRABAJADORES QUE PUEDEN REALIZAR EL TURNO -->
+          <table class="tabla-trabajadores">
+            <caption class="tabla-trabajadores__titulo">
+              Trabajadores disponibles y distancia hasta el domicilio de María López
+            </caption>
+
+            <thead>
+              <tr>
+                <th class="tabla-trabajadores__encabezado" scope="col">Trabajadores disponibles</th>
+                <th class="tabla-trabajadores__encabezado" scope="col">Distancia</th>
+                <th class="tabla-trabajadores__encabezado" scope="col">Acción</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="tabla-trabajadores__fila">
+                <th class="tabla-trabajadores__trabajador" scope="row">
+                  <img
+                    class="tabla-trabajadores__imagen"
+                    src="./icons/anaTorresTrabajador.png"
+                    alt="Fotografía de Ana Torres"
+                    width="30"
+                    height="30"
+                  />
+                  <p class="tabla-trabajadores__nombre">Ana Torres</p>
+                </th>
+                <td class="tabla-trabajadores__distancia">
+                  <data value="800">800 m</data>
+                </td>
+                <td class="tabla-trabajadores__accion">
+                  <button class="tabla-trabajadores__boton" type="button">
+                    Asignar turno a Ana Torres
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="tabla-trabajadores__fila">
+                <th class="tabla-trabajadores__trabajador" scope="row">
+                  <img
+                    class="tabla-trabajadores__imagen"
+                    src="./icons/luisPerezTrabajador.png"
+                    alt="Fotografía de Luis Pérez"
+                    width="30"
+                    height="30"
+                  />
+                  <p class="tabla-trabajadores__nombre">Luis Pérez</p>
+                </th>
+                <td class="tabla-trabajadores__distancia">
+                  <data value="1200">1.2 km</data>
+                </td>
+                <td class="tabla-trabajadores__accion">
+                  <button class="tabla-trabajadores__boton" type="button">
+                    Asignar turno a Luis Pérez
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="tabla-trabajadores__fila">
+                <th class="tabla-trabajadores__trabajador" scope="row">
+                  <img
+                    class="tabla-trabajadores__imagen"
+                    src="./icons/felipeGomezTrabajador.png"
+                    alt="Fotografía de Felipe Gómez"
+                    width="30"
+                    height="30"
+                  />
+                  <p class="tabla-trabajadores__nombre">Felipe Gómez</p>
+                </th>
+                <td class="tabla-trabajadores__distancia">
+                  <data value="2300">2.3 km</data>
+                </td>
+                <td class="tabla-trabajadores__accion">
+                  <button class="tabla-trabajadores__boton" type="button">
+                    Asignar turno a Felipe Gómez
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- ACCIÓN PARA CANCELAR LA ASIGNACIÓN -->
+          <a class="acciones-turno__cancelar" href="cuadrantes.html"> Cancelar </a>
+        </section>
+      </main>
+
+      <footer class="pie-pagina">
+        <p class="pie-pagina__copyright">&copy; 2026 CUIDALIA. Todos los derechos reservados.</p>
+        <nav class="pie-pagina__navegacion">
+          <ul class="pie-pagina__lista">
+            <li class="pie-pagina__elemento">
+              <a class="pie-pagina__enlace" href="index.html"> Inicio </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+  </body>
+</html>
