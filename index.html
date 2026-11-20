@@ -77,7 +77,7 @@
               height="24"
               aria-hidden="true"
             />
-            <a class="menu-principal__enlace" href="index.html">
+            <a class="menu-principal__enlace" href="./index.html">
               <span class="menu-principal__texto">Inicio</span>
             </a>
           </li>
@@ -90,7 +90,7 @@
               height="30"
               aria-hidden="true"
             />
-            <a class="menu-principal__enlace" href="#">
+            <a class="menu-principal__enlace" href="./cuadrantes.html">
               <span class="menu-principal__texto">Cuadrantes</span>
             </a>
           </li>
@@ -191,197 +191,195 @@
       </nav>
     </aside>
 
-    <!-- ZONA PRINCIPAL: Barra superior y contenido de la pantalla -->
-    <section class="zona-aplicacion">
-      <main class="zona-principal">
-        <header class="barra-superior">
-          <form class="buscador" role="search">
-            <label class="buscador-etiqueta">
-              <img
-                class="buscador__icono"
-                src="./icons/lupa.svg"
-                alt="Icono de Lupa"
-                width="18"
-                height="18"
-                aria-hidden="true"
-              />
-              <input class="buscador__campo" type="search" name="busqueda" placeholder="Buscar" />
-            </label>
-          </form>
-
-          <button class="notificaciones" type="button">
+    <!-- ZONA PRINCIPAL: Barra superior, contenido de la pantalla y pie de página -->
+    <main class="zona-principal">
+      <header class="barra-superior">
+        <form class="buscador" role="search">
+          <label class="buscador-etiqueta">
             <img
-              class="notificaciones__icono"
-              src="./icons/campana.svg"
-              alt="Icono de Campana"
-              width="20"
-              height="20"
+              class="buscador__icono"
+              src="./icons/lupa.svg"
+              alt="Icono de Lupa"
+              width="18"
+              height="18"
               aria-hidden="true"
             />
-          </button>
+            <input class="buscador__campo" type="search" name="busqueda" placeholder="Buscar" />
+          </label>
+        </form>
 
-          <button class="perfil-superior" type="button">
-            <img
-              class="perfil-superior__imagen"
-              src="./icons/coordinadoraImagen.png"
-              alt="Foto de perfil de una coordinadora"
-              width="42"
-              height="42"
-              aria-hidden="true"
-            />
-            <span class="perfil-superior__nombre">Coordinadora</span>
-            <svg
-              class="perfil-superior__desplegable"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
+        <button class="notificaciones" type="button">
+          <img
+            class="notificaciones__icono"
+            src="./icons/campana.svg"
+            alt="Icono de Campana"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          />
+        </button>
+
+        <button class="perfil-superior" type="button">
+          <img
+            class="perfil-superior__imagen"
+            src="./icons/coordinadoraImagen.png"
+            alt="Foto de perfil de una coordinadora"
+            width="42"
+            height="42"
+            aria-hidden="true"
+          />
+          <span class="perfil-superior__nombre">Coordinadora</span>
+          <svg
+            class="perfil-superior__desplegable"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </header>
+
+      <section class="contenido-principal">
+        <header class="encabezado-pagina">
+          <h1 class="encabezado-pagina__titulo">Resumen general</h1>
+          <p class="encabezado-pagina__fecha">
+            <time datetime="2026-11-04">Miércoles, 4 de noviembre de 2026</time>
+          </p>
         </header>
 
-        <section class="contenido-principal">
-          <header class="encabezado-pagina">
-            <h1 class="encabezado-pagina__titulo">Resumen general</h1>
-            <p class="encabezado-pagina__fecha">
-              <time datetime="2026-11-04">Miércoles, 4 de noviembre de 2026</time>
-            </p>
-          </header>
+        <section class="indicadores">
+          <ul class="indicadores__lista">
+            <li class="indicadores__elemento">
+              <article class="tarjeta-indicador">
+                <p class="tarjeta-indicador__valor">14</p>
+                <h2 class="tarjeta-indicador__titulo">Usuarios activos</h2>
+              </article>
+            </li>
 
-          <section class="indicadores">
-            <ul class="indicadores__lista">
-              <li class="indicadores__elemento">
-                <article class="tarjeta-indicador">
-                  <p class="tarjeta-indicador__valor">14</p>
-                  <h2 class="tarjeta-indicador__titulo">Usuarios activos</h2>
+            <li class="indicadores__elemento">
+              <article class="tarjeta-indicador">
+                <p class="tarjeta-indicador__valor">7</p>
+                <h2 class="tarjeta-indicador__titulo">Trabajadores</h2>
+              </article>
+            </li>
+
+            <li class="indicadores__elemento">
+              <article class="tarjeta-indicador">
+                <p class="tarjeta-indicador__valor">10</p>
+                <h2 class="tarjeta-indicador__titulo">Turnos de hoy</h2>
+              </article>
+            </li>
+
+            <li class="indicadores__elemento">
+              <article class="tarjeta-indicador">
+                <p class="tarjeta-indicador__valor">7</p>
+                <h2 class="tarjeta-indicador__titulo">Incidencias</h2>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="paneles-resumen">
+          <section class="panel-turnos">
+            <header class="panel-turnos__cabecera">
+              <h2 class="panel-turnos__titulo">Turnos de hoy</h2>
+              <a class="panel-turnos__enlace" href="#"> Ver todo &gt; </a>
+            </header>
+
+            <ul class="lista-turnos">
+              <li class="lista-turnos__elemento">
+                <article class="turno">
+                  <time class="turno__hora" datetime="08:00">08:00</time>
+                  <section class="turno__informacion">
+                    <h3 class="turno__trabajador">María López</h3>
+                    <p class="turno__descripcion">Cuidadora de Domingo García</p>
+                  </section>
                 </article>
               </li>
 
-              <li class="indicadores__elemento">
-                <article class="tarjeta-indicador">
-                  <p class="tarjeta-indicador__valor">7</p>
-                  <h2 class="tarjeta-indicador__titulo">Trabajadores</h2>
+              <li class="lista-turnos__elemento">
+                <article class="turno">
+                  <time class="turno__hora" datetime="09:30">09:30</time>
+                  <section class="turno__informacion">
+                    <h3 class="turno__trabajador">José García</h3>
+                    <p class="turno__descripcion">Cuidador de Mario Pérez</p>
+                  </section>
                 </article>
               </li>
 
-              <li class="indicadores__elemento">
-                <article class="tarjeta-indicador">
-                  <p class="tarjeta-indicador__valor">10</p>
-                  <h2 class="tarjeta-indicador__titulo">Turnos de hoy</h2>
+              <li class="lista-turnos__elemento">
+                <article class="turno">
+                  <time class="turno__hora" datetime="11:00">11:00</time>
+                  <section class="turno__informacion">
+                    <h3 class="turno__trabajador">Carmen Ruíz</h3>
+                    <p class="turno__descripcion">Cuidadora de Ángeles Muñoz</p>
+                  </section>
                 </article>
               </li>
 
-              <li class="indicadores__elemento">
-                <article class="tarjeta-indicador">
-                  <p class="tarjeta-indicador__valor">7</p>
-                  <h2 class="tarjeta-indicador__titulo">Incidencias</h2>
+              <li class="lista-turnos__elemento">
+                <article class="turno">
+                  <time class="turno__hora" datetime="12:30">12:30</time>
+                  <section class="turno__informacion">
+                    <h3 class="turno__trabajador">Antonio Fernández</h3>
+                    <p class="turno__descripcion">Cuidador de José Manuel de la Cruz</p>
+                  </section>
                 </article>
               </li>
             </ul>
           </section>
 
-          <section class="paneles-resumen">
-            <section class="panel-turnos">
-              <header class="panel-turnos__cabecera">
-                <h2 class="panel-turnos__titulo">Turnos de hoy</h2>
-                <a class="panel-turnos__enlace" href="#"> Ver todo &gt; </a>
-              </header>
+          <section class="panel-alertas">
+            <header class="panel-alertas__cabecera">
+              <h2 class="panel-alertas__titulo">Alertas</h2>
+              <a class="panel-alertas__enlace" href="#"> Ver todo &gt; </a>
+            </header>
 
-              <ul class="lista-turnos">
-                <li class="lista-turnos__elemento">
-                  <article class="turno">
-                    <time class="turno__hora" datetime="08:00">08:00</time>
-                    <section class="turno__informacion">
-                      <h3 class="turno__trabajador">María López</h3>
-                      <p class="turno__descripcion">Cuidadora de Domingo García</p>
-                    </section>
-                  </article>
-                </li>
+            <ul class="lista-alertas">
+              <li class="lista-alertas__elemento">
+                <article class="alerta">
+                  <p class="alerta__titulo">Incidencia sin resolver</p>
+                  <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
+                </article>
+              </li>
 
-                <li class="lista-turnos__elemento">
-                  <article class="turno">
-                    <time class="turno__hora" datetime="09:30">09:30</time>
-                    <section class="turno__informacion">
-                      <h3 class="turno__trabajador">José García</h3>
-                      <p class="turno__descripcion">Cuidador de Mario Pérez</p>
-                    </section>
-                  </article>
-                </li>
+              <li class="lista-alertas__elemento">
+                <article class="alerta">
+                  <p class="alerta__titulo">Incidencia sin resolver</p>
+                  <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
+                </article>
+              </li>
 
-                <li class="lista-turnos__elemento">
-                  <article class="turno">
-                    <time class="turno__hora" datetime="11:00">11:00</time>
-                    <section class="turno__informacion">
-                      <h3 class="turno__trabajador">Carmen Ruíz</h3>
-                      <p class="turno__descripcion">Cuidadora de Ángeles Muñoz</p>
-                    </section>
-                  </article>
-                </li>
+              <li class="lista-alertas__elemento">
+                <article class="alerta">
+                  <p class="alerta__titulo">Incidencia sin resolver</p>
+                  <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
+                </article>
+              </li>
 
-                <li class="lista-turnos__elemento">
-                  <article class="turno">
-                    <time class="turno__hora" datetime="12:30">12:30</time>
-                    <section class="turno__informacion">
-                      <h3 class="turno__trabajador">Antonio Fernández</h3>
-                      <p class="turno__descripcion">Cuidador de José Manuel de la Cruz</p>
-                    </section>
-                  </article>
-                </li>
-              </ul>
-            </section>
-
-            <section class="panel-alertas">
-              <header class="panel-alertas__cabecera">
-                <h2 class="panel-alertas__titulo">Alertas</h2>
-                <a class="panel-alertas__enlace" href="#"> Ver todo &gt; </a>
-              </header>
-
-              <ul class="lista-alertas">
-                <li class="lista-alertas__elemento">
-                  <article class="alerta">
-                    <p class="alerta__titulo">Incidencia sin resolver</p>
-                    <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
-                  </article>
-                </li>
-
-                <li class="lista-alertas__elemento">
-                  <article class="alerta">
-                    <p class="alerta__titulo">Incidencia sin resolver</p>
-                    <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
-                  </article>
-                </li>
-
-                <li class="lista-alertas__elemento">
-                  <article class="alerta">
-                    <p class="alerta__titulo">Incidencia sin resolver</p>
-                    <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
-                  </article>
-                </li>
-
-                <li class="lista-alertas__elemento">
-                  <article class="alerta">
-                    <p class="alerta__titulo">Incidencia sin resolver</p>
-                    <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
-                  </article>
-                </li>
-              </ul>
-            </section>
+              <li class="lista-alertas__elemento">
+                <article class="alerta">
+                  <p class="alerta__titulo">Incidencia sin resolver</p>
+                  <time class="alerta__tiempo" datetime="PT2H">Hace 2h</time>
+                </article>
+              </li>
+            </ul>
           </section>
         </section>
-      </main>
+      </section>
 
       <footer class="pie-pagina">
         <p class="pie-pagina__copyright">&copy; 2026 CUIDALIA. Todos los derechos reservados.</p>
-        <nav class="pie-pagina__navegacion" aria-label="Navegación del pie de página">
+        <nav class="pie-pagina__navegacion">
           <ul class="pie-pagina__lista">
             <li class="pie-pagina__elemento">
               <a class="pie-pagina__enlace" href="index.html"> Inicio </a>
@@ -389,6 +387,6 @@
           </ul>
         </nav>
       </footer>
-    </section>
+    </main>
   </body>
 </html>

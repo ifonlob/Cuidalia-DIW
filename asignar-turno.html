@@ -28,7 +28,7 @@
         <a class="marca" href="index.html">
           <img
             class="marca__imagen"
-            src="./icons/Logotipo Cuidalia.svg"
+            src="./icons/logotipo-cuidalia.svg"
             alt="Logotipo de Cuidalia"
             width="78"
             height="63"
@@ -150,237 +150,237 @@
     </aside>
 
     <!-- ZONA PRINCIPAL: Barra superior y contenido de la pantalla -->
-    <section class="zona-aplicacion">
-      <main class="zona-principal">
-        <header class="barra-superior">
-          <form class="buscador">
-            <label class="buscador-etiqueta">
-              <img
-                class="buscador__icono"
-                src="./icons/lupa.svg"
-                alt="Buscar"
-                width="18"
-                height="18"
-              />
-              <input class="buscador__campo" type="search" name="busqueda" placeholder="Buscar" />
-            </label>
-          </form>
-
-          <button class="notificaciones" type="button">
+    <main class="zona-principal">
+      <header class="barra-superior">
+        <form class="buscador">
+          <label class="buscador-etiqueta">
             <img
-              class="notificaciones__icono"
-              src="./icons/campana.svg"
-              alt="Icono de Campana"
-              width="20"
-              height="20"
+              class="buscador__icono"
+              src="./icons/lupa.svg"
+              alt="Buscar"
+              width="18"
+              height="18"
             />
-          </button>
+            <input class="buscador__campo" type="search" name="busqueda" placeholder="Buscar" />
+          </label>
+        </form>
 
-          <button class="perfil-superior" type="button">
+        <button class="notificaciones" type="button">
+          <img
+            class="notificaciones__icono"
+            src="./icons/campana.svg"
+            alt="Icono de Campana"
+            width="20"
+            height="20"
+          />
+        </button>
+
+        <button class="perfil-superior" type="button">
+          <img
+            class="perfil-superior__imagen"
+            src="./icons/coordinadoraImagen.png"
+            alt="Foto de perfil de una coordinadora"
+            width="42"
+            height="42"
+          />
+          <span class="perfil-superior__nombre">Coordinadora</span>
+          <svg
+            class="perfil-superior__desplegable"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            focusable="false"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </header>
+
+      <section class="contenido-principal">
+        <!-- ENCABEZADO DE LA ASIGNACIÓN -->
+        <header class="encabezado-pagina encabezado-pagina--asignar-turno">
+          <img
+            class="encabezado-pagina__icono"
+            src="./icons/cuadrantes.svg"
+            alt=""
+            width="24"
+            height="24"
+          />
+          <h1 class="encabezado-pagina__titulo">Asignar Turno</h1>
+        </header>
+
+        <!-- USUARIO AL QUE SE LE ASIGNARÁ EL TURNO -->
+        <section class="usuario-seleccionado">
+          <h2 class="usuario-seleccionado__titulo">Usuario/a seleccionado/a</h2>
+
+          <article class="tarjeta-usuario">
             <img
-              class="perfil-superior__imagen"
-              src="./icons/coordinadoraImagen.png"
-              alt="Foto de perfil de una coordinadora"
+              class="tarjeta-usuario__imagen"
+              src="./icons/mariaLopezUsuario.png"
+              alt="Fotografía de María López"
               width="42"
               height="42"
             />
-            <span class="perfil-superior__nombre">Coordinadora</span>
-            <svg
-              class="perfil-superior__desplegable"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              focusable="false"
-            >
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-        </header>
 
-        <section class="contenido-principal">
-          <!-- ENCABEZADO DE LA ASIGNACIÓN -->
-          <header class="encabezado-pagina encabezado-pagina--asignar-turno">
-            <img
-              class="encabezado-pagina__icono"
-              src="./icons/cuadrantes.svg"
-              alt=""
-              width="24"
-              height="24"
-            />
-            <h1 class="encabezado-pagina__titulo">Asignar Turno</h1>
-          </header>
+            <header class="tarjeta-usuario__informacion">
+              <h3 class="tarjeta-usuario__nombre">María López</h3>
+              <address class="tarjeta-usuario__direccion">Calle Las Flores 14</address>
+            </header>
 
-          <!-- USUARIO AL QUE SE LE ASIGNARÁ EL TURNO -->
-          <section class="usuario-seleccionado">
-            <h2 class="usuario-seleccionado__titulo">Usuario/a seleccionado/a</h2>
-
-            <article class="tarjeta-usuario">
-              <img
-                class="tarjeta-usuario__imagen"
-                src="./icons/mariaLopezUsuario.png"
-                alt="Fotografía de María López"
-                width="42"
-                height="42"
-              />
-
-              <header class="tarjeta-usuario__informacion">
-                <h3 class="tarjeta-usuario__nombre">María López</h3>
-                <address class="tarjeta-usuario__direccion">Calle Las Flores 14</address>
-              </header>
-
-              <a class="tarjeta-usuario__enlace" href="usuario.html"> Ver ficha de María López </a>
-            </article>
-          </section>
-
-          <!-- INFORMACIÓN DEL TURNO QUE SE VA A ASIGNAR -->
-          <section class="turno-seleccionado">
-            <h2 class="turno-seleccionado__titulo">Turno</h2>
-
-            <article class="tarjeta-turno">
-              <ul class="detalle-turno">
-                <li class="detalle-turno__elemento">
-                  Fecha
-                  <p class="detalle-turno__valor detalle-turno__valor--fecha">
-                    <img
-                      class="detalle-turno__icono"
-                      src="./icons/cuadrantes.svg"
-                      alt=""
-                      width="24"
-                      height="24"
-                    />
-                    <time datetime="2026-04-21">Lunes 21 de abril de 2026</time>
-                  </p>
-                </li>
-
-                <li class="detalle-turno__elemento">
-                  Horario
-                  <p class="detalle-turno__valor detalle-turno__valor--horario">
-                    <svg
-                      class="detalle-turno__icono"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="9"></circle>
-                      <path d="M12 7v5l3 2"></path>
-                    </svg>
-                    <time datetime="2026-04-21T16:00">16:00</time> -
-                    <time datetime="2026-04-21T17:30">17:30</time>
-                  </p>
-                </li>
-
-                <li class="detalle-turno__elemento">
-                  Tareas
-                  <p class="detalle-turno__valor detalle-turno__valor--tareas">
-                    <img
-                      class="detalle-turno__icono"
-                      src="./icons/inicio.svg"
-                      alt=""
-                      width="24"
-                      height="24"
-                    />
-                    Limpieza del baño, higiene y cocina
-                  </p>
-                </li>
-              </ul>
-            </article>
-          </section>
-
-          <!-- TRABAJADORES QUE PUEDEN REALIZAR EL TURNO -->
-          <table class="tabla-trabajadores">
-            <caption class="tabla-trabajadores__titulo">
-              Trabajadores disponibles y distancia hasta el domicilio de María López
-            </caption>
-
-            <thead>
-              <tr>
-                <th class="tabla-trabajadores__encabezado" scope="col">Trabajadores disponibles</th>
-                <th class="tabla-trabajadores__encabezado" scope="col">Distancia</th>
-                <th class="tabla-trabajadores__encabezado" scope="col">Acción</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr class="tabla-trabajadores__fila">
-                <th class="tabla-trabajadores__trabajador" scope="row">
-                  <img
-                    class="tabla-trabajadores__imagen"
-                    src="./icons/anaTorresTrabajador.png"
-                    alt="Fotografía de Ana Torres"
-                    width="30"
-                    height="30"
-                  />
-                  <p class="tabla-trabajadores__nombre">Ana Torres</p>
-                </th>
-                <td class="tabla-trabajadores__distancia">
-                  <data value="800">800 m</data>
-                </td>
-                <td class="tabla-trabajadores__accion">
-                  <button class="tabla-trabajadores__boton" type="button">
-                    Asignar turno a Ana Torres
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="tabla-trabajadores__fila">
-                <th class="tabla-trabajadores__trabajador" scope="row">
-                  <img
-                    class="tabla-trabajadores__imagen"
-                    src="./icons/luisPerezTrabajador.png"
-                    alt="Fotografía de Luis Pérez"
-                    width="30"
-                    height="30"
-                  />
-                  <p class="tabla-trabajadores__nombre">Luis Pérez</p>
-                </th>
-                <td class="tabla-trabajadores__distancia">
-                  <data value="1200">1.2 km</data>
-                </td>
-                <td class="tabla-trabajadores__accion">
-                  <button class="tabla-trabajadores__boton" type="button">
-                    Asignar turno a Luis Pérez
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="tabla-trabajadores__fila">
-                <th class="tabla-trabajadores__trabajador" scope="row">
-                  <img
-                    class="tabla-trabajadores__imagen"
-                    src="./icons/felipeGomezTrabajador.png"
-                    alt="Fotografía de Felipe Gómez"
-                    width="30"
-                    height="30"
-                  />
-                  <p class="tabla-trabajadores__nombre">Felipe Gómez</p>
-                </th>
-                <td class="tabla-trabajadores__distancia">
-                  <data value="2300">2.3 km</data>
-                </td>
-                <td class="tabla-trabajadores__accion">
-                  <button class="tabla-trabajadores__boton" type="button">
-                    Asignar turno a Felipe Gómez
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- ACCIÓN PARA CANCELAR LA ASIGNACIÓN -->
-          <a class="acciones-turno__cancelar" href="cuadrantes.html"> Cancelar </a>
+            <a class="tarjeta-usuario__enlace" href="./ficha-usuario.html">
+              Ver ficha de María López
+            </a>
+          </article>
         </section>
-      </main>
+
+        <!-- INFORMACIÓN DEL TURNO QUE SE VA A ASIGNAR -->
+        <section class="turno-seleccionado">
+          <h2 class="turno-seleccionado__titulo">Turno</h2>
+
+          <article class="tarjeta-turno">
+            <ul class="detalle-turno">
+              <li class="detalle-turno__elemento">
+                Fecha
+                <p class="detalle-turno__valor detalle-turno__valor--fecha">
+                  <img
+                    class="detalle-turno__icono"
+                    src="./icons/cuadrantes.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                  <time datetime="2026-04-21">Lunes 21 de abril de 2026</time>
+                </p>
+              </li>
+
+              <li class="detalle-turno__elemento">
+                Horario
+                <p class="detalle-turno__valor detalle-turno__valor--horario">
+                  <svg
+                    class="detalle-turno__icono"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5l3 2"></path>
+                  </svg>
+                  <time datetime="2026-04-21T16:00">16:00</time> -
+                  <time datetime="2026-04-21T17:30">17:30</time>
+                </p>
+              </li>
+
+              <li class="detalle-turno__elemento">
+                Tareas
+                <p class="detalle-turno__valor detalle-turno__valor--tareas">
+                  <img
+                    class="detalle-turno__icono"
+                    src="./icons/inicio.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                  Limpieza del baño, higiene y cocina
+                </p>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- TRABAJADORES QUE PUEDEN REALIZAR EL TURNO -->
+        <table class="tabla-trabajadores">
+          <caption class="tabla-trabajadores__titulo">
+            Trabajadores disponibles y distancia hasta el domicilio de María López
+          </caption>
+
+          <thead>
+            <tr>
+              <th class="tabla-trabajadores__encabezado" scope="col">Trabajadores disponibles</th>
+              <th class="tabla-trabajadores__encabezado" scope="col">Distancia</th>
+              <th class="tabla-trabajadores__encabezado" scope="col">Acción</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="tabla-trabajadores__fila">
+              <th class="tabla-trabajadores__trabajador" scope="row">
+                <img
+                  class="tabla-trabajadores__imagen"
+                  src="./icons/anaTorresTrabajador.png"
+                  alt="Fotografía de Ana Torres"
+                  width="30"
+                  height="30"
+                />
+                <p class="tabla-trabajadores__nombre">Ana Torres</p>
+              </th>
+              <td class="tabla-trabajadores__distancia">
+                <data value="800">800 m</data>
+              </td>
+              <td class="tabla-trabajadores__accion">
+                <button class="tabla-trabajadores__boton" type="button">
+                  Asignar turno a Ana Torres
+                </button>
+              </td>
+            </tr>
+
+            <tr class="tabla-trabajadores__fila">
+              <th class="tabla-trabajadores__trabajador" scope="row">
+                <img
+                  class="tabla-trabajadores__imagen"
+                  src="./icons/luisPerezTrabajador.png"
+                  alt="Fotografía de Luis Pérez"
+                  width="30"
+                  height="30"
+                />
+                <p class="tabla-trabajadores__nombre">Luis Pérez</p>
+              </th>
+              <td class="tabla-trabajadores__distancia">
+                <data value="1200">1.2 km</data>
+              </td>
+              <td class="tabla-trabajadores__accion">
+                <button class="tabla-trabajadores__boton" type="button">
+                  Asignar turno a Luis Pérez
+                </button>
+              </td>
+            </tr>
+
+            <tr class="tabla-trabajadores__fila">
+              <th class="tabla-trabajadores__trabajador" scope="row">
+                <img
+                  class="tabla-trabajadores__imagen"
+                  src="./icons/felipeGomezTrabajador.png"
+                  alt="Fotografía de Felipe Gómez"
+                  width="30"
+                  height="30"
+                />
+                <p class="tabla-trabajadores__nombre">Felipe Gómez</p>
+              </th>
+              <td class="tabla-trabajadores__distancia">
+                <data value="2300">2.3 km</data>
+              </td>
+              <td class="tabla-trabajadores__accion">
+                <button class="tabla-trabajadores__boton" type="button">
+                  Asignar turno a Felipe Gómez
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- ACCIÓN PARA CANCELAR LA ASIGNACIÓN -->
+        <a class="acciones-turno__cancelar" href="cuadrantes.html"> Cancelar </a>
+      </section>
 
       <footer class="pie-pagina">
         <p class="pie-pagina__copyright">&copy; 2026 CUIDALIA. Todos los derechos reservados.</p>
@@ -392,6 +392,6 @@
           </ul>
         </nav>
       </footer>
-    </section>
+    </main>
   </body>
 </html>
