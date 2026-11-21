@@ -1,0 +1,5 @@
+@use "../tools" as *;
+
+:focus-visible {
+  @include focus-ring;
+}
