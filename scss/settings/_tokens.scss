@@ -1,0 +1,96 @@
+// Colores primitivos del modo claro
+$primitives-light: (
+  "teal-50": #e8f7f6,
+  "teal-100": #cdedeb,
+  "teal-400": #4f9291,
+  "teal-500": #087f8c,
+  "teal-600": #066d76,
+  "teal-700": #07565b,
+  "teal-900": #123d40,
+  "teal-white": #ffffff,
+  "teal-black": #000000,
+
+  "coral-50": #fff0ea,
+  "coral-100": #ffd9ce,
+  "coral-500": #f0785e,
+  "coral-800": #9c3f2c
+);
+
+// Colores primitivos del modo oscuro
+$primitives-dark: (
+  "teal-50": #202b2f,
+  "teal-100": #2e3d42,
+  "teal-400": #609b9c,
+  "teal-500": #78acad,
+  "teal-600": #68c0b8,
+  "teal-700": #abc8c8,
+  "teal-900": #d7e9e7,
+  "teal-white": #141b1e,
+  "teal-black": #eef4f3,
+
+  "coral-50": #332527,
+  "coral-100": #483035,
+  "coral-500": #ee9a88,
+  "coral-800": #f6c2b3
+);
+
+// Tokens semánticos
+
+$semantic: (
+  "surface-page": "teal-white",
+  "surface-card": "teal-50",
+  "surface-on-page": "teal-black",
+  "surface-on-card": "teal-900",
+
+  "text-primary": "teal-black",
+  "text-secondary": "teal-700",
+
+  "border-default": "teal-500",
+  "border-accent": "coral-800",
+
+  "accent-decorative": "coral-100",
+  "accent-text": "coral-800",
+
+  "action-primary": "teal-600",
+  "action-on-primary": "teal-white",
+  "action-secondary": "teal-100",
+  "action-on-secondary": "teal-900",
+
+  "field-surface": "teal-100",
+  "field-text": "teal-900",
+  "field-placeholder": "teal-700"
+);
+
+// Colores de estado del modo claro
+$status-light: (
+  "status-success": #15803d,
+  "status-warning": #b45309,
+  "status-error": #b91c1c,
+  "status-info": #1d4ed8,
+  "status-on-status": #ffffff
+);
+
+// Colores de estado del modo oscuro
+$status-dark: (
+  "status-success": #78c99b,
+  "status-warning": #e9c373,
+  "status-error": #ee9b99,
+  "status-info": #8dbbe8,
+  "status-on-status": #000000
+);
+
+// Espaciados
+$spacing: (
+  "space-4": 0.25rem,
+  "space-8": 0.5rem,
+  "space-12": 0.75rem,
+  "space-16": 1rem,
+  "space-24": 1.5rem,
+  "space-32": 2rem
+);
+
+// Radios
+$radii: (
+  "radius-minor": 0.3125rem,
+  "radius-major": 0.9375rem
+);

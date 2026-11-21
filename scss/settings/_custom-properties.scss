@@ -1,0 +1,47 @@
+@use "tokens" as t;
+
+:root {
+  color-scheme: light dark;
+
+  // Tipografías
+  --font-primary: "IBM Plex Sans", sans-serif;
+  --font-primary-monospace: "IBM Plex Mono", monospace;
+
+  // Tokens primitivos
+  @each $name, $value in t.$primitives-light {
+    --#{$name}: #{$value};
+  }
+
+  // Tokens semánticos
+  @each $name, $primitive in t.$semantic {
+    --#{$name}: var(--#{$primitive});
+  }
+
+  // Estados
+  @each $name, $value in t.$status-light {
+    --#{$name}: #{$value};
+  }
+
+  // Espaciados
+  @each $name, $value in t.$spacing {
+    --#{$name}: #{$value};
+  }
+
+  // Radios
+  @each $name, $value in t.$radii {
+    --#{$name}: #{$value};
+  }
+}
+
+// Modo oscuro
+@media (prefers-color-scheme: dark) {
+  :root {
+    @each $name, $value in t.$primitives-dark {
+      --#{$name}: #{$value};
+    }
+
+    @each $name, $value in t.$status-dark {
+      --#{$name}: #{$value};
+    }
+  }
+}
