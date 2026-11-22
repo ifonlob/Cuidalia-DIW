@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "../settings/breakpoints" as bp;
+
+// Anillo de foco
+@mixin focus-ring($color: var(--action-primary)) {
+  outline: 2px solid $color;
+  outline-offset: 2px;
+}
+
+// Pantallas iguales o inferiores al breakpoint
+@mixin below($name) {
+  @if not map.has-key(bp.$breakpoints, $name) {
+    @error "El breakpoint #{$name} no existe.";
+  }
+
+  @media (max-width: map.get(bp.$breakpoints, $name)) {
+    @content;
+  }
+}
+
+// Pantallas iguales o superiores al breakpoint
+@mixin from($name) {
+  @if not map.has-key(bp.$breakpoints, $name) {
+    @error "El breakpoint #{$name} no existe.";
+  }
+
+  @media (min-width: map.get(bp.$breakpoints, $name)) {
+    @content;
+  }
+}
