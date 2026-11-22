@@ -1,0 +1,52 @@
+// Etiquetas de campos
+label {
+  display: inline-block;
+  font-weight: 500;
+}
+
+// Controles de formulario
+input,
+textarea,
+select {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+
+  color: var(--text-primary);
+}
+
+// Área de texto
+textarea {
+  resize: vertical;
+}
+
+// Texto de ayuda de los campos
+::placeholder {
+  color: var(--field-placeholder);
+  opacity: 1;
+}
+
+// Botones
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+// Botones deshabilitados
+button:disabled {
+  cursor: not-allowed;
+}
+
+// Grupos de campos
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+// Leyenda de los grupos
+legend {
+  font-weight: 600;
+}
