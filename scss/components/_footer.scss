@@ -1,0 +1,40 @@
+
+.pie-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 1.6rem 3.2rem;
+  margin-top: auto;
+  background-color: var(--surface-card);
+  border-top: 1px solid var(--border-default);
+
+  &__copyright{
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+  }
+
+  &__navegacion{
+    display: flex;
+    align-items: center;
+  }
+
+  &__lista{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__enlace{
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+  }
+
+  &__enlace:hover{
+    color: var(--accent-text);
+  }
+}
