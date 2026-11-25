@@ -1,0 +1,110 @@
+.barra-superior {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.4rem;
+  width: 100%;
+  padding: 1.6rem 3.2rem;
+  background-color: var(--surface-card);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.buscador {
+  margin-right: auto;
+  min-width: 0;
+
+    &-etiqueta{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__icono{
+        position: absolute;
+        left: 1.4rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        pointer-events: none;
+    }
+
+    &__campo{
+        width: 32rem;
+        padding: 0.8rem 1.4rem 0.8rem 4rem;
+        font-family: var(--font-primary-monospace);
+        font-size: 1.5rem;
+        color: var(--text-primary);
+        background-color: transparent;
+        border: 1px solid var(--border-default);
+        border-radius: 0.8rem;
+        transition: border-color 0.2s ease;
+    }
+
+    &__campo::placeholder{
+        color: var(--field-placeholder);
+    }
+
+    &__campo:focus{
+        border-color: var(--action-primary);
+    }
+
+    .notificaciones{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    padding: 0;
+    background-color: var(--accent-decorative);
+    border: 1px solid var(--border-accent);
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    }
+
+    &:hover{
+        opacity: 0.85;
+    }
+
+    &__icono{
+        width: 3rem;
+        height: 4rem;  
+    }
+}
+
+.perfil-superior{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 0.4rem 0.8rem;
+    background: transparent;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover{
+        background-color: var(--field-surface);
+    }
+
+    &__imagen{
+        width: 4.2rem;
+        height: 4.2rem;
+        border-radius: 50%;
+        border: 2px solid var(--teal-400);
+        object-fit: cover;
+    }
+
+    &__nombre{
+        font-family: var(--font-primary);
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    &__desplegable{
+        width: 1.8rem;
+        height: 1.8rem;
+        color: var(--text-primary);
+    }
+}
