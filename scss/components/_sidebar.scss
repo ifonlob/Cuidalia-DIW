@@ -1,0 +1,160 @@
+
+
+.barra-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  height: 100vh;
+  height: 100dvh;
+  min-width: 0;
+  padding: 1.2rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--surface-card);
+  border-right: 1px solid var(--border-default);
+}
+
+
+.marca{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &__imagen{
+    width: 7.8rem;
+    height: auto;
+  }
+
+  &__nombre{
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+}
+
+.perfil-lateral{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &__imagen{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  &__nombre{
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  &__rol{
+    font-family: var(--font-primary-monospace);
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  &__boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    padding: 0.8rem;
+
+    color: var(--text-primary);
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  &__boton:hover{
+    opacity: 0.7;
+  }
+
+  &__boton svg{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.menu-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 1.6rem 0;
+
+  &__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0 0 3rem 0;
+    border-bottom: 1px solid var(--border-default);
+  }
+
+  &__lista--inferior{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__elemento{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1rem 1.4rem;
+    border: 1px solid transparent;
+    border-radius: 0.8rem;
+    transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+  }
+
+  &__elemento:hover, &__elemento--activo{
+    background-color: var(--accent-decorative);
+    border-color: var(--border-accent);
+  }
+
+  &__enlace{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+  }
+
+  &__texto{
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  &__enlace--salir{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+
+
+
