@@ -29,7 +29,7 @@
   }
 
   // Radios
-  @each $name, $value in t.$radii {
+  @each $name, $value in t.$radius {
     --#{$name}: #{$value};
   }
 }
