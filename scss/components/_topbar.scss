@@ -47,8 +47,8 @@
     &__campo:focus{
         border-color: var(--action-primary);
     }
-
-    .notificaciones{
+}
+.notificaciones{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +60,7 @@
     border-radius: 0.8rem;
     cursor: pointer;
     transition: opacity 0.2s ease;
-    }
+    
 
     &:hover{
         opacity: 0.85;
